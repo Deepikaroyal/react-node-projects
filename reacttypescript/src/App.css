@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+.App {
+  height:100vh;
+  width: 100vw;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* background-color: #cdb4db; */
+
+}
+.heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 30px 0;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  font-family: "Neucha", cursive;
+}
+@media (max-width: 800px) {
+  .heading {
+    margin: 15px 0;
+    font-size: 35px;
+  }
+}
+
+/* Header style: */
+.task-header {
+  background-color: #cdb4db;
+  font-family: "Neucha", cursive;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+/* Sidebar style: */
+.row > * {
+  margin-top: 0px !important;
+}
+.Sidebar {
+  /* border: 1px solid black; */
+  background-color: #ffc8dd;
+  box-shadow: 10px black;
+ 
+  height:30vh  ;
+  padding: 1rem;
+  margin-top: 15px !important;
+}
+
+.Sidebar .Col {
+  padding: 0px !important;
+}
+
+.nav-link {
+  color: black !important;
+  background-color: #ffc8dd;
+  padding: 0px;
+}
+.mid-body-row {
+  padding-top: 0px;
+}
+.sidebar-icon{
+  width: 22px;
+  height:auto;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.sidebar-link{
+  text-decoration: none;
+  color: #000000;
+}
+/* Table Style: */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 20px;
+}
+
+th,
+tr {
+  background-color: rgb(79, 182, 241);
+}
+
+/* td {
+  background-color: rgb(205, 235, 253);
+} */
+tr:nth-child(odd) {
+  background-color: #a2d2ff;
+}
+tr:nth-child(even) {
+  background-color: #bde0fe;
+}
+.user-name-link{
+  text-decoration: none;
+  color: #1f1e1e;
+}
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 20px;
+}
+
+/* form styling */
+form {
+  background-color: #bde0fe;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.login-heading {
+  text-align: center;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.btn-primary {
+  background-color: #ffafcc !important;
+  border-color: #ffafcc !important;
+  color: black !important;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: white !important;
+  color: #ffafcc !important;
+  border-color: white;
+  box-shadow: none;
+}
+
+.login-form-anchor-tag {
+  text-decoration-color: black;
+}
+
+.login-form-anchor-tag :hover {
+  text-decoration-color: white;
+  color: rgb(73, 69, 69);
+}
+
+.login-form {
+  width: 400px;
+  margin: auto;
+  max-width: 90%;
+}
+
+.login-email-input-box {
+  border: none;
+}
+.login-email-input-box:focus {
+  box-shadow: none;
+  border: none;
+}
+.login-password-input-box {
+  border: none;
+}
+.login-password-input-box:focus {
+  box-shadow: none;
+  border: none;
+}
+/* edit button style: */
+.add-button{
+  background-color: rgb(79, 182, 241);
+  border: 2px solid rgb(37, 161, 233);
+}
+/* Delete button Style */
+.delete-button{
+  background-color: rgb(216, 62, 62);
+  border: 2px solid red;
+  margin-left: 5px;
+}
+/* cancel-button style */
+.cancel-button{
+  background-color: #cdb4db;
+  border: 2px solid #c899e4;
+  margin-left: 5px;
+}
+/* Edit button style: */
+.edit-button{
+  background-color: #cdb4db;
+  border: 2px solid #bb6ee7;
+}
+/* Save button style: */
+.save-button{
+  background-color: rgb(103, 103, 207);
+  border: 2px solid rgb(26, 26, 180);
+}
+/* dashboard style: */
+.user-detail-heading{
+  font-family: "Neucha", cursive;
+  
+}
+.userdetail-span{
+  margin-left: 10px;
+  color:#704a86
+}

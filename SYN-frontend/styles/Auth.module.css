@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+.maincontent {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../public/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* overflow: hidden !important; */
+  /* background-color: #323132; */
+  display: flex;
+  justify-content: center;
+  /* height: 100vh; */
+  align-items: center;
+  height: 100vh;
+}
+
+.eyeBUTTON{
+position: relative;
+
+}
+.mainContentHead{
+  height: auto !important;
+}
+.contentHead{
+  margin-bottom: 0px;
+  margin-top: 2.5rem;
+  font-weight: normal;
+  font-size: 2.2rem;
+}
+
+.loginFormWrapper {
+  /* height: 100vh; */
+  /* margin: auto; */
+  display: flex;
+  align-items: center;
+}
+.loginForm {
+  max-width: 67rem;
+ 
+ 
+  background-color: white;
+  padding: 4rem !important;
+  box-shadow: 0rem 0rem 3rem #00000026;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+.form-head h2 {
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+.form-head p {
+  text-align: left;
+  font-family: Poppins;
+  color: #848384;
+}
+.form-head {
+  position: relative;
+}
+.form-head :after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #848384;
+  bottom: -25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input .email {
+  padding-bottom: 0.5rem;
+}
+.email {
+  width: 100%;
+  border-radius: 0.5rem;
+  border-color: #848384;
+  /* color: #323132; */
+  padding-bottom: 0.5rem;
+}
+.input-field {
+  padding-bottom: 2rem;
+}
+.forgotPwd {
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+    display: flex;
+  font-weight: 500;
+    justify-content: flex-end;
+    padding: 0px;
+    text-decoration: none;
+    color: #323132;
+    
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+.loginButton {
+    /* margin-top: 30px; */
+    width: 100%;
+    padding: 1.9rem 1.8rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    border-radius: 10px;
+}
+
+.loginButton2{
+  width: 100%;
+    padding: 1.9rem 1.8rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    border-radius: 10px;
+    background-color: #0f73ee;
+    border: transparent;
+    color: #FFFFFF;
+    margin-top: 5rem;
+}
+.verifyButton{
+  margin-top: 5rem;
+  width: 100%;
+  padding: 1.9rem 1.8rem;
+  font-weight: 500;
+  font-size: 2.4rem;
+  border-radius: 1rem;
+}
+.textLogin {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  color: #848384;
+  font-size: 1.8rem;
+
+}
+.googleButton {
+  text-transform: none;
+  width: 100%;
+  padding-bottom: 10px;
+  /* background-color: red; */
+}
+.googleImage {
+  padding-top: 1rem;
+  width: 2rem;
+  margin-bottom: 0.3rem;
+  margin-right: 0.5rem;
+}
+.textSignup {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.textGray {
+  color: #848384;
+  text-decoration: none;
+}
+.text-black {
+  color: #323132;
+}
+.textBlue {
+  color: #0f73ee;
+  text-decoration: none;
+}
+.googleText {
+  margin-bottom: 2rem;
+}
+.txtEnter {
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  color: #848384;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.txtPwd {
+    
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #848384;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+/* .input:focus{
+    border: 1px solid #D9D5D5;
+} */
+.input{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.iconWrapper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  width: 5rem;
+}
+.inputEmail {
+  border: none;
+  background-color: transparent;
+  border: 0.1rem solid #d9d5d5;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 2.2rem;
+  padding: 1.7rem 2rem 1.7rem 2rem;
+  width: 100%;
+  color: #323132;
+  
+
+}
+
+.txtVerify {
+  padding-left: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.loginHead {
+  /* padding-top: 25px; */
+  color: #848384;
+  font-size: 2.2rem;
+}
+
+.googleButton1 {
+  text-decoration: none;
+  text-align: center;
+}
+
+.horizontalLine {
+  height: 2px;
+  width: 100%;
+  color: #323132;
+  border: 1px solid black;
+ 
+}
+
+.line {
+  margin-top: 4rem;
+  display: inline-block;
+  width: 100%;
+  border-top: 0.2px solid #cfcfcf;
+}
+/* .defineLine{
+  margin-top: 3rem;
+  margin-bottom: 0px;
+} */
+.bottomLink {
+  color: #848384;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  font-weight: normal;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.signUp {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color:#0F73EE;
+}
+
+.GoogleButton1 {
+  padding: 1.5rem 0rem;
+  width: 100%;
+  /* background-color: red; */
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #d9d5d5;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.Googletext {
+  margin-left: 1rem;
+  /* text-align: center; */
+  align-items: center;
+  color: #000000;
+  margin-bottom: 0px;
+  font-size: 2.4rem;
+}
+.errMsg {
+  position: absolute;
+  color: red;
+    font-size: 1.3rem;
+    height: 1rem;
+  
+}
+.txtbold {
+  font-weight: 600;
+  color: #323132;
+  font-size: 2.2rem;
+}
+.headTXT{
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+  font-size: 2.2rem;
+}
+@media screen and (max-width: 1024px) {
+  .txtVerify {
+    /* padding-left: 10px; */
+    font-size: 18px;
+  }
+  .headTXT{
+    margin-top: 8px;
+  }
+  .txtEnter{
+    margin-top: 0px;
+  }
+  .defineLine{
+    margin-top: 0px;
+  }
+  .loginForm {
+    padding: 30px !important;
+  }
+  .loginHead {
+    /* padding-left: 10px; */
+    font-size: 18px;
+    line-height: 26px;
+  }
+  /* .loginHead {
+    padding-top: 17px;
+  } */
+  .line {
+    margin-top: 0px;
+  }
+  .formMargin {
+    margin-top: 18px;
+  }
+  .txtEnter,
+  .txtPwd {
+    font-size: 18px;
+  }
+  .inputEmail {
+    font-size: 12px;
+    padding: 14px;
+  }
+  .txtPwd {
+    padding-top: 0px;
+  }
+  .forgotPwd {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+  .loginButton,
+  .verifyButton,
+  .GoogleButton1 {
+    padding: 8px;
+    font-size: 15px;
+  }
+  .verifyButton{
+    margin-top: 25px;
+  }
+  .textLogin {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .Googletext {
+    font-size: 16px;
+  }
+  .googlelogo {
+    height: 8px !important;
+  }
+  .bottomLink,
+  .signUp {
+    font-size: 12px;
+  }
+  .textSignup{
+    margin-top: 0px;
+  }
+  .errMsg{
+    font-size: 1.3rem;
+    height: 1rem;
+  }
+  .iconWrapper{
+    width: 20px;
+    right: 20px;
+    top: 50%;
+  }
+  .contentHead{
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .txtVerify {
+    /* padding-left: 10px; */
+    font-size: 20px;
+  }
+  .headTXT{
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .txtEnter{
+    margin-top: 0px;
+  }
+  .loginForm {
+    padding: 10px !important;
+  }
+  .loginHead {
+    /* padding-left: 10px; */
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .loginHead {
+    padding-top: 20px;
+  }
+  .line {
+    margin-top: 0px;
+  }
+  .formMargin {
+    margin-top: 20px;
+  }
+  .txtEnter,
+  .txtPwd {
+    font-size: 14px;
+  }
+  .inputEmail {
+    font-size: 15px;
+    padding: 12px;
+  }
+  .txtPwd {
+    padding-top: 0px;
+  }
+  .forgotPwd {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .loginButton,
+  .verifyButton,
+  .GoogleButton1 {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .textLogin {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .Googletext {
+    font-size: 18px;
+  }
+  .googlelogo {
+    height: 10px !important;
+  }
+  .bottomLink,
+  .signUp {
+    font-size: 14px;
+  }
+  .errMsg{
+    font-size: 1.3rem;
+    height: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .txtVerify {
+    /* padding-left: 10px; */
+    font-size: 15px;
+  }
+  .headTXT{
+    margin-top: 8px;
+  }
+  .txtEnter{
+    margin-top: 0px;
+  }
+  .Images1 {
+    height: 25px;
+    width: 25px;
+  }
+  .loginHead {
+    padding-top: 14px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .formMargin {
+    margin-top: 10px;
+  }
+  .txtEnter,
+  .txtPwd {
+    font-size: 15px;
+  }
+  .txtPwd {
+    padding-top: 10px;
+  }
+  .inputEmail {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .forgotPwd {
+    font-size: 10px;
+    /* padding-top: 10px; */
+  }
+  .verifyButton{
+    margin-top: 30px;
+  }
+  .loginButton,
+  .verifyButton,
+  .GoogleButton1 {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .textLogin {
+    font-size: 10px;
+  }
+  .Googletext {
+    font-size: 12px;
+  }
+  .textSignup{
+    margin-top: 0px;
+  }
+  .errMsg{
+    font-size: 1.3rem;
+    height: 1rem;
+  }
+  .contentHead{
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .headTXT{
+    margin-top: 0px;
+  }
+  .defineLine{
+    margin-top: 0px;
+  }
+  .txtEnter{
+    margin-top: 0px;
+  }
+  .txtPwd{
+    margin-top: 0px;
+  }
+  .input{
+    margin: 0px;
+    padding: 0px;
+  }
+  .errMsg{
+    font-size: 1.3rem;
+    height: 1rem;
+  }
+  .Image1{
+  width: 20px;
+  height: 20px;
+  }
+  .contentHead{
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}

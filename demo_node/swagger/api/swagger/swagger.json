@@ -1,0 +1,367 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "UserAPI",
+      "description": "API to manage users",
+      "version": "1.0.0"
+    },
+    "host": "localhost:3000",
+    "basePath": "/users",
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "consumes": [
+      "application/json",
+      "multipart/form-data",
+      "application/x-www-form-urlencoded"
+    ],
+    "securityDefinitions": {
+      "BearerAuth": {
+        "type": "apiKey",
+        "name": "auth",
+        "in": "header",
+        "description": "Access token for authorized requests"
+      },
+      "BasicAuth": {
+        "type": "basic",
+        "description": "HTTP Basic Authentication with username and password"
+      }
+    },
+    "security": [
+      {
+        "BearerAuth": []
+      },
+      {
+        "BasicAuth": []
+      }
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/getUser": {
+        "get": {
+          "operationId": "getUser",
+          "summary": "Get all users",
+          "description": "Returns a list of all users in the system",
+          "x-swagger-router-controller": "userController",
+          "responses": {
+            "200": {
+              "description": "A list of users",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "name"
+                    },
+                    "email": {
+                      "type": "string",
+                      "description": "email"
+                    },
+                    "phoneNo": {
+                      "type": "string",
+                      "description": "phoneNo"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/createUser": {
+        "post": {
+          "operationId": "createUser",
+          "summary": "Create a user",
+          "description": "Creates a new user in the system",
+          "x-swagger-router-controller": "userController",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "description": "User details",
+              "required": true,
+              "schema": {
+                "$ref": "#/components/schemas/UserRequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "User created successfully"
+            },
+            "400": {
+              "description": "Invalid input parameters"
+            }
+          }
+        }
+      },
+      "/login": {
+        "post": {
+          "operationId": "login",
+          "summary": "Login user",
+          "description": "Authenticating user",
+          "x-swagger-router-controller": "userController",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "description": "Login credentials",
+              "required": true,
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Login successfully"
+            },
+            "400": {
+              "description": "Failed to Login"
+            }
+          }
+        }
+      },    
+      "/editUser": {
+        "put": {
+          "operationId": "editUser",
+          "summary": "Edit user",
+          "description": "Edits an existing user in the system",
+          "x-swagger-router-controller": "userController",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "description": "Updated user information ",
+              "required": true,
+              "schema": {
+                "$ref": "#/components/schemas/EditUserRequest"
+              }
+            }
+          ], 
+          "responses": {
+            "200": {
+              "description": "User edited successfully"
+            },
+            "400": {
+              "description": "Failed to find and edit user parameters"
+            }
+          }
+        }
+      },
+      "/deleteUser": {
+        "delete": {
+          "operationId": "deleteUser",
+          "summary": "Delete user",
+          "description": "Delete an existing user in the system",
+          "x-swagger-router-controller": "userController",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "description": "ID of the user to delete",
+              "required": true,
+              "schema": {
+                "$ref": "#/components/schemas/DeleteUserRequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "User deleted successfully"
+            },
+            "400": {
+              "description": "Failed to delete user"
+            }
+          }
+        }
+      },
+      "/upload/{_id}": {
+        "post": {
+          "operationId": "upload",
+          "summary": "Upload user profile image",
+          "description": "Uploads a profile image for a user",
+          "x-swagger-router-controller": "userController",
+          "parameters": [
+            {
+              "name": "_id",
+              "in": "path",
+              "description": "ID of the user",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "profile",
+              "in": "formData",
+              "description": "Profile image file",
+              "required": true,
+              "type": "file"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Profile image uploaded successfully"
+            },
+            "400": {
+              "description": "Failed to upload profile image"
+            }
+          }
+        }
+      },
+      "/getProfile/{_id}": {
+        "get": {
+          "operationId": "getProfile",
+          "summary": "Get user profile image",
+          "description": "Retrieves the profile image of a user",
+          "x-swagger-router-controller": "userController",
+          "parameters": [
+            {
+              "name": "_id",
+              "in": "path",
+              "description": "ID of the user",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Profile image retrieved successfully",
+              "content": {
+                "image/*": {}
+              }
+            },
+            "400": {
+              "description": "Failed to retrieve profile image"
+            }
+          }
+        }
+      },
+      "/uploadPosts/{_id}": {
+        "post": {
+          "operationId": "uploadPosts",
+          "summary": "Upload user profile posts",
+          "description": "Uploads post images for a user",
+          "x-swagger-router-controller": "userController",
+          "parameters": [
+            {
+              "name": "_id",
+              "in": "path",
+              "description": "ID of the user",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "posts",
+              "in": "formData",
+              "description": "user posts  file",
+              "required": true,
+              "type": "file"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "User posts uploaded successfully"
+            },
+            "400": {
+              "description": "Failed to upload user posts"
+            }
+          }
+        }
+      },
+      "/swagger": {
+        "x-swagger-pipe-module": "swagger_raw"
+      }
+    },
+    "components": {
+      "schemas": {
+        "UserRequest": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the user"
+            },
+            "email": {
+              "type": "string",
+              "description": "Email of the user"
+            },
+            "phoneNo": {
+              "type": "string",
+              "description": "Phone number of the user"
+            },
+            "password": {
+              "type": "string",
+              "description": "Password of the user"
+            }
+          },
+          "required": ["name", "email", "password"]
+        },
+        "LoginRequest": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "description": "Email of the user"
+            },
+            "password": {
+              "type": "string",
+              "description": "Password of the user"
+            }
+          },
+          "required": ["email", "password"]
+        },
+        
+        "EditUserRequest": {
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "string",
+              "description": "ID of the user to edit"
+            },
+            "name": {
+              "type": "string",
+              "description": "New name of the user"
+            },
+            "email": {
+              "type": "string",
+              "description": "New email of the user"
+            },
+            "phoneNo": {
+              "type": "string",
+              "description": "Phone number of the user"
+            }
+          },
+          "required": ["_id"]
+        },
+        "DeleteUserRequest": {
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "string",
+              "description": "ID of the user to delete"
+            }
+          },
+          "required": ["_id"]
+        }
+      }
+    }
+  }
+  
+  

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="login_icon" transform="translate(-652 -177)">
+    <rect id="Rectangle_530" data-name="Rectangle 530" width="60" height="60" rx="20" transform="translate(652 177)" fill="#f2f8ff"/>
+    <rect id="Rectangle_529" data-name="Rectangle 529" width="47" height="47" rx="15" transform="translate(658 183)" fill="#daebfe"/>
+    <path id="Path_7633" data-name="Path 7633" d="M18.33,12.827A5.909,5.909,0,1,1,7.24,9.983L.166,2.916a.579.579,0,0,1-.114-.648.413.413,0,0,1,.092-.132L1.728.552A.452.452,0,0,1,1.86.46a.575.575,0,0,1,.648.114l.979.979L4.9.144A.452.452,0,0,1,5.028.052a.575.575,0,0,1,.648.114L7.238,1.728a.452.452,0,0,1,.092.132.575.575,0,0,1-.114.648L5.828,3.9,9.575,7.644a5.91,5.91,0,0,1,8.755,5.183Zm-3.838-2.073a2.935,2.935,0,1,0,.856,2.073A2.884,2.884,0,0,0,14.491,10.754Z" transform="translate(694.709 206.951) rotate(135)" fill="#0f73ee"/>
+  </g>
+</svg>

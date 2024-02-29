@@ -1,0 +1,2 @@
+import "nextjs-google-fonts"
+

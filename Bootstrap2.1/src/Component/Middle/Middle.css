@@ -1,0 +1,14 @@
+.middle{
+    /* margin-top: 10px; */
+    box-shadow: none;
+    border: 2px solid rebeccapurple;
+    
+}
+
+.form-control{
+    background-color:whitesmoke;
+    }
+/* .col{
+    margin-left: 10px;
+    margin-right: 10px;
+} */

@@ -1,0 +1,158 @@
+%sectionsright{
+    width: 80%;
+    height: 200px;
+    box-shadow: 0px 0px 11px rgba(183, 180, 180, 0.2);
+    border-radius: 10px;
+}
+
+.mid-body {
+    width: 60%;
+    height: 500px;
+}
+
+.mid-body h2 {
+    margin-top: 80px;
+}
+
+.block {
+    width: 98%;
+    height: 85px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px rgba(183, 180, 180, 0.2);
+}
+
+.block input {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 75%;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.block1 {
+    height: 200px;
+    width: 97%;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-left: 1%;
+    box-shadow: 0px 0px 11px rgba(183, 180, 180, 0.2);
+    border-radius: 10px;;
+    display: flex;
+}
+
+.block11 img {
+    width: 100%;
+    height: 180px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.block11 {
+    width: 30%;
+    height: 190px;
+}
+
+.block12 {
+    width: 65%;
+    height: 190px;
+    margin-left: 5%;
+}
+
+.color {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: -75px;
+    margin-left: 20px;
+}
+
+.color h1 {
+    font-size: 17px;
+    color: white;
+    margin-left: 10px;
+}
+
+.color p {
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+}
+
+.block12 h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.block12 h3 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.block12 p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.section31 {
+   @extend %sectionsright;
+    margin-top: 140px;
+    
+}
+
+.section32 {
+    @extend %sectionsright;
+    margin-top: 20px;
+
+}
+
+.section31 img {
+    width: 80%;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.color1 {
+    width: 80%;
+    height: 70px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: -75px;
+    margin-left: 10%;
+}
+
+.color1 h1 {
+    font-size: 17px;
+    color: white;
+    margin-left: 10px;
+}
+
+.color1 p {
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+}
+
+.section32 img {
+    width: 80%;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.section33 {
+    @extend %sectionsright;
+    margin-top: 20px;
+}
+
+.section33 img {
+    width: 80%;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 10%;
+}

@@ -1,0 +1,96 @@
+.mid-body{
+    width: calc(1280px-880px);  // 10px,10 px left and right body margin 10px, 10 px left and right amrgin for middle body and 400px 400px left and right content box width
+  // width :60%;
+   border: 1px solid black;
+   align-content: center;
+   margin-right:30px;
+   margin-left: 30px;
+   //position: static;
+}
+
+.block {
+    width: 98%;
+    height: 85px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px rgba(183, 180, 180, 0.2);
+}
+
+.block input {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 75%;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+//////////////////
+
+
+
+.block1 {
+    height: 200px;
+    width: 97%;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-left: 1%;
+    box-shadow: 0px 0px 11px rgba(183, 180, 180, 0.2);
+    border-radius: 10px;;
+    display: flex;
+}
+
+.block11 img {
+    width: 100%;
+    height: 180px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.block11 {
+    width: 30%;
+    height: 190px;
+}
+
+.block12 {
+    width: 65%;
+    height: 190px;
+    margin-left: 5%;
+}
+
+.color {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: -75px;
+    margin-left: 20px;
+}
+
+.color h1 {
+    font-size: 17px;
+    color: white;
+    margin-left: 10px;
+}
+
+.color p {
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+}
+
+.block12 h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.block12 h3 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.block12 p {
+    font-size: 18px;
+    margin-top: 20px;
+}

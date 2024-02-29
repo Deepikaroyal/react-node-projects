@@ -1,0 +1,38 @@
+swagger: "2.0"
+info:
+  title: "UserAPI"
+  description: "API_to_manage_users"
+  version: "1.0.0"
+host: localhost:3000
+basePath: "/users"
+schemes:
+  - http
+consumes:
+  - application/x-www-form-urlencoded
+produces:
+  - application/json
+paths: "/getUser" 
+get:
+  operationId: getUser
+  summary: "Get all users"
+  description: "Returns a list of all users in the system"
+  x-swagger-router-controller: userController
+responses:
+  "200":
+    description: "A list of users"
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+            description: name
+          email:
+            type: string
+            description: email
+          phoneNo:
+            type: string
+            description: phoneNo
+/swagger:
+  x-swagger-pipe-module: swagger_raw

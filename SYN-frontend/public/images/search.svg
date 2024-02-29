@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="search" transform="translate(0.019)">
+    <rect id="Path" width="25" height="25" transform="translate(-0.019)" fill="rgba(255,255,255,0)"/>
+    <path id="search-Regular_1_" d="M274.492,1032.323l-5.171-5.171a9.1,9.1,0,1,0-1.169,1.169l5.171,5.171a.827.827,0,1,0,1.169-1.169Zm-19.587-10.982a7.436,7.436,0,1,1,7.436,7.436A7.436,7.436,0,0,1,254.905,1021.341Z" transform="translate(-251.348 -1010.634)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+  </g>
+</svg>

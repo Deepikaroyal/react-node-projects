@@ -1,0 +1,6 @@
+export const LOGGING_USER = "LOGGING_USER";
+export const LOGIN_USER_SUCCESS = "LOGIN_USER_SUCCESS";
+export const LOGIN_USER_FAILURE = "LOGIN_USER_FAILURE";
+export const LOGOUT = "LOGOUT";
+export const UPDATE_CURRENT_USER = "UPDATE_CURRENT_USER";
+export const SITE_THEME = "SITE_THEME";

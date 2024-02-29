@@ -1,0 +1,28 @@
+
+//promise already resolve:
+const p = Promise.resolve({id:1});
+p.then(result => console.log(result))
+
+
+//promise already rejected:
+const P = Promise.reject(new Error('reason for rejection...')); //to see call stack
+P.catch(err=> console.log(err))
+
+//promises in parllel:
+const p1 = new Promise((resolve,reject) => {
+  setTimeout(() => {
+    console.log("Async operation 1 failed... ");
+    reject(1);
+  }, 2000);
+});
+
+const p2 = new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Async operation 2... ");
+      resolve(2);
+    }, 2000);
+  })
+  
+  Promise.all([p1,p2])
+  .then(result => console.log(result))
+  .catch(err => console.log('Error',err.message))

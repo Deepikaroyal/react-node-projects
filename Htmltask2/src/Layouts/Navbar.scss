@@ -1,0 +1,25 @@
+.section {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+  }
+  .section1 {
+    width: 20%;
+    height: 500px;
+  }
+
+  .section1 h2 {
+    color: aqua;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .section1 ol {
+    list-style-type: none;
+  }
+  .section1 li {
+    margin-left: 30px;
+  
+    margin-bottom: 10px;
+  }

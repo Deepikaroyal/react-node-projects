@@ -1,0 +1,319 @@
+.main_explore {
+  padding-top: 8.5rem;
+}
+
+.leftSide {
+  /* height: 100vh; */
+  width: 100%;
+}
+
+.rightSide {
+  /* height: 100vh; */
+  width: 100%;
+}
+/* //main_content */
+.Head_text {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #323132;
+}
+
+/* //buttons */
+.buttons_main {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.7rem;
+}
+.content_buttons {
+  display: flex;
+}
+
+.upperSection_checkout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.artspan {
+  display: flex;
+  background: #f1f7fe 0% 0% no-repeat padding-box;
+  border: 1px solid #d9d5d5;
+  border-radius: 5px;
+  opacity: 1;
+  gap: 0.9rem;
+  padding: 0.7rem 1.9rem;
+  align-items: center;
+}
+.art_txt {
+  margin-bottom: 0rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #848384;
+  font-weight: 500;
+}
+.art_txt:hover {
+  color: #848384;
+}
+.artspan_timer {
+  display: flex;
+  padding: 0.7rem 1.9rem;
+
+  background: #0f73ee 0% 0% no-repeat padding-box;
+  border: 1px solid #d9d5d5;
+  border-radius: 2px;
+}
+
+.art_txt_timer {
+  margin-bottom: 0rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  font-weight: 500;
+}
+.art_txt_timer:hover {
+  color: #ffffff;
+}
+.explorePara {
+  margin-top: 2rem;
+}
+
+.explore_paratext {
+  font-size: 1.6rem;
+  color: #5b585b;
+  margin-bottom: 0rem;
+  opacity: 0.8;
+  line-height: 3rem;
+}
+
+.SubCollection {
+  display: flex;
+  margin-top: 2rem;
+  gap: 7rem;
+}
+.Creator_text {
+  color: #323132;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-bottom: 0rem;
+  font-weight: 400;
+}
+.subCreator {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.creatorName {
+  color: #323132;
+  font-size: 1.8rem;
+
+  opacity: 1;
+}
+
+.sub_lower {
+  margin-top: 2.5rem;
+}
+.Properties {
+  font-size: 1.6rem;
+  color: #323132;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.properties_content {
+  list-style: none;
+}
+.pricetext {
+  margin-top: 2rem;
+}
+.price {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #323132;
+}
+
+.price_content {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.Eth_sapn {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f7fe;
+  border-radius: 0.5rem;
+  border: 1px solid #d9d5d5;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+.ETHIMG {
+  padding: 0.4rem 0.7rem;
+}
+.price_amount {
+  font-size: 3rem;
+  color: #323132;
+  font-weight: 600;
+  margin-bottom: 0rem;
+}
+.pricebuttons {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.Buynow_btn {
+  padding: 1.3rem 4rem;
+  border-radius: 10px;
+  background: #0f73ee;
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.Bid_btn {
+  padding: 1.3rem 4rem;
+  border-radius: 10px;
+  background: #cfe3fc;
+  border: none;
+  color: #0f73ee;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.Divpropertie {
+  background: #f1f7fe 0% 0% no-repeat padding-box;
+  border: 1px solid #d9d5d5;
+  border-radius: 5px;
+  opacity: 1;
+  text-align: center;
+  padding: 1.2rem;
+  margin: 0.75rem 0rem;
+}
+
+.propertieContent {
+  color: #0f73ee;
+  opacity: 1;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.propertieDetail {
+  color: #323132;
+  opacity: 1;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.sub_details {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #848384;
+}
+
+/* //////Buynow_ui  , Place a bid//////////// */
+
+.checkoutDiv {
+  max-width: 495px;
+}
+
+.sub_main_div {
+  background-color: #ffffff;
+  padding: 3rem;
+  box-shadow: 0px 0px 30px #00000026;
+  border-radius: 10px;
+}
+
+.formBuynow {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout_head {
+  color: #323132;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  font-weight: 600;
+}
+.para_checkout {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #848384;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.para_checkout_clr {
+  color: #323132;
+}
+
+.para_checkout_clr:hover{
+    color: #323132;;
+}
+.sub_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quantity_text {
+  /* margin-top: 3rem; */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #323132;
+  margin-bottom: 1rem;
+}
+.quantity_text_clr {
+  color: #0f73ee;
+}
+
+.checkoutInput {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #d9d5d5;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 1rem;
+  width: 100%;
+  color: #323132;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.pay_div{
+  margin-bottom: 3rem;
+}
+.bln_text {
+  color: #848384;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  
+}
+
+.bln_ETH{
+  font-size: 1.5rem;
+  color: #323132;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.funds{
+  display: flex;
+  justify-content: center;
+}
+
+.addfundBTN{
+  padding: 1.1rem 16.6rem;
+  width: 100%;
+  transition: 300ms all ease-in;
+  background: #0F73EE;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  border: transparent;
+  font-weight: 600;
+
+}
+
+/* .checkoutInput:focus{
+  border: 1px solid #d9d5d5;
+} */

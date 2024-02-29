@@ -1,0 +1,68 @@
+{
+  "name": "invoicemart",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/base": "^5.0.0-alpha.68",
+    "@mui/icons-material": "^5.2.0",
+    "@mui/lab": "^5.0.0-alpha.61",
+    "@mui/material": "^5.2.2",
+    "@mui/styles": "^5.2.2",
+    "@mui/x-data-grid-pro": "^5.2.1",
+    "@react-pdf/renderer": "2.1.0",
+    "@react-pdf/font": "2.2.0",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.24.0",
+    "crypto-js": "^4.1.1",
+    "date-fns": "^2.28.0",
+    "moment": "^2.29.1",
+    "node-jose": "^2.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-device-detect": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-loader-spinner": "^5.1.7-beta.1",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "react-toastify": "^8.1.0",
+    "recharts": "^2.1.8",
+    "redux-persist": "^6.0.0",
+    "web-vitals": "^1.1.2",
+    "zxcvbn": "^4.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "@types/node-jose": "^1.1.10"
+  }
+}

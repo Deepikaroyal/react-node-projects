@@ -1,0 +1,21 @@
+.input-text {
+  width: 2em;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #CBCBCB;
+  margin-right: 8px;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+}
+
+.otpContainer {
+  display: flex;
+  width: 85%;
+}
+
+.input-text:focus {
+  outline: none;
+}

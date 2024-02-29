@@ -1,0 +1,83 @@
+@mixin img {
+// max-width:100vh;
+   // max-height: 100vw;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+// @mixin button{
+//     border-radius: 5px;
+//     width: 100%;
+//     border: 1px solid ;
+//     margin: 0 0 15px;
+//     padding: px;
+//     outline: 0;
+//     font-size: 15px;
+//     text-align: center;
+//     box-sizing: border-box;
+//    // background-color: black;
+// }
+
+.form_wrapper{
+    text-align: center;
+    //align-items: center;
+    justify-content: center; 
+    display: flex;
+    background-color: rgb(253, 247, 247);
+    height: 100vh;
+    width: 100vw; 
+ }
+.inner_wrapper{
+
+height:550px;
+width: 30vw;
+box-shadow: 11px,12px,13px,12px rgb(228, 225, 225);
+margin:auto;
+padding-top: 30px;
+background-color: white;
+}
+img{
+    @include img;
+    height:50px ;
+    width:50px;
+}
+@mixin inputfields{
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    margin: 25px 0;
+}
+.inputfield1, .inputfield2{
+    @include inputfields;
+ }
+ .btn{
+  font-size: 15px;
+  outline: 0;
+  border: 0;
+  height: 4vh;
+  width: 5vw;
+  border-radius: 12cm;
+  
+  padding: 5px;
+  background: #0a0908;
+  color: white;
+  text-transform: uppercase;
+    &:hover {
+      background-color: white;
+      color: #f03a0d;
+      border: 1px solid #f81605;
+    }
+  }
+  .msg{
+    //   margin-left: auto;
+    //   margin-right: auto;
+  
+    padding-right: 25%;
+        text-align: right;
+      color: rgb(14, 14, 160);
+      font-size: 12px;
+  }
+  

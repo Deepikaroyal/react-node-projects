@@ -1,0 +1,31 @@
+import setting from "./setting"
+export default(()=>{
+return{
+    // 'AUTH': setting.api.AUTH,
+    'USER_SIGNUP': setting.api.url + '/auth/form/signup/',
+    'USER_LOGIN': setting.api.url + '/auth/form/login_send_otp/',
+    'SIGNUP_OTP': setting.api.url+ '/auth/form/validate_otp/',
+    'LOGIN_OTP' : setting.api.url+'/auth/form/validate_otp/',
+    'FORGOT_PASSWORD' :setting.api.url+ '/auth/form/send_otp/',
+    'SIGNUP_RESEND' : setting.api.url+'/auth/form/resend_otp_login/',
+    'FORGOT_OTP_VERIFICATION':setting.api.url+'/auth/form/validate_otp_forget_password/',
+    'NEW_PASSWORD': setting.api.url+'/auth/form/forget_password/',
+    'PROFILE_CHANGE_PASSWORD':setting.api.url+'/auth/form/reset_password/',
+     'PROFILE_UPDATE': setting.api.url+'/auth/auth/update_user_details/',
+     'GOOGLE_LOGIN': setting.api.url+'/auth/form/google_auth/',
+     'HEADER_DATA_RETRIVE': setting.api.url+'/auth/auth/get_user_info/',
+     'CREATE_POST' :setting.api.url+"/post/create_post/",
+     'GET_CATEGORY_DATA' :setting.api.url+"/post/get_catergory/",
+     'GET_SUGGESTION_LIST' :setting.api.url+"/auth/friend/suggestion_list/",
+     'GET_PROFILE_CREATE_DATA' :setting.api.url+"/post/get_user_post/?",
+     'FOLLOW_USER' :setting.api.url+"/auth/friend/follow/",
+     'FEEDS_DATA' :setting.api.url+"/post/get_feeds_post/",
+     'FOLLOWING_USER_LIST' :setting.api.url+"/auth/friend/follow_list/",
+     'FOLLOWER_USER_LIST' :setting.api.url+"/auth/friend/followers_list/",
+     'UNFOLLOW_USER' :setting.api.url+"/auth/friend/unfollow/",
+     'POST_COMMENT' :setting.api.url+"/post/comment/",
+     'GET_ALL_COMMENT' :setting.api.url+"/post/comment/get_comment/",
+     'LIKE' :setting.api.url+"/like/",
+     'DISLIKE' :setting.api.url+"/like/unlike/",
+}
+})()
