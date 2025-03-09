@@ -1,0 +1,62 @@
+.train-container {
+    position: fixed; /* Ensures it covers the full screen without scrolling */
+    top: 0;
+    left: 0;
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/platform.jpg'); /* Corrected */
+    background-repeat: no-repeat;  /* Added */
+    background-position: left center; /* Added */
+    background-size: cover;
+    overflow: hidden;
+  }
+  /* .train-display {
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: 300px;
+    background: #f9f9f9;
+  } */
+   .train-display{
+    position: absolute;
+    top: 20%;  /* Adjust based on image alignment */
+    left: 5%; /* Position it in the top-right corner */
+    width: 300px; /* Adjust width to match the display in the image */
+    padding: 15px;
+    background: black; /* Dark semi-transparent for better visibility */
+    color: white;
+    border-radius: 10px;
+    /* text-align: center;
+    font-family: Arial, sans-serif; */
+   }
+  
+   .train-display h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Bright yellow to mimic digital displays */
+  }
+  
+  .train-display ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .train-display li {
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .train-display li:last-child {
+    border-bottom: none;
+  }
+  
+  @media (max-width: 768px) {
+    .train-display {
+      width: 250px; 
+      top: 10%;
+      right: 3%;
+      font-size: 0.9rem;
+    }
+  }
+  
+  
