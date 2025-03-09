@@ -2,16 +2,11 @@
   font-family: sans-serif;
   text-align: center;
 }
-
-
-
-
-@media (max-width: 768px) {
-  .train-display {
-    width: 250px; 
-    top: 10%;
-    right: 3%;
-    font-size: 0.9rem;
-  }
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 

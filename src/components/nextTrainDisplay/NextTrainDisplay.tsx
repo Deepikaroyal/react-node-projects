@@ -1,52 +1,53 @@
 import React, { useEffect, useState } from "react";
+import { useVirtualClock } from "../../hooks/useVirtualClock";
+import { getUpcomingTrains } from "../../mockData/TrainData";
 import { Train } from "../../common/types";
-import { getUpcomingTrains, hasUpcomingTrains } from "../../common/utils";
-import trainImage from "../assets/modern-train-station.jpg";
 import "./nextTrainIndicator.css";
 
 const NextTrainDisplay: React.FC = () => {
-  const [currentTime, setCurrentTime] = useState(0);
+  const virtualTime = useVirtualClock(5 * 60); // Starts at 05:00 VT
   const [visibleTrains, setVisibleTrains] = useState<Train[]>([]);
 
   useEffect(() => {
-    if (!hasUpcomingTrains(currentTime)) {
-      console.log("No more trains. Stopping time updates.");
-      return;
-    }
+    const updateTrains = () => {
+      const currentMinutes =
+        parseInt(virtualTime?.split(":")[0]) * 60 +
+        parseInt(virtualTime?.split(":")[1]);
+      setVisibleTrains(getUpcomingTrains(currentMinutes)?.slice(0, 2));
+    };
 
-    const interval = setInterval(() => {
-      setCurrentTime((prev) => prev + 1);
-    }, 1000);
-
+    updateTrains();
+    const interval = setInterval(updateTrains, 1000);
     return () => clearInterval(interval);
-  }, [currentTime]);
-
-  useEffect(() => {
-    setVisibleTrains(getUpcomingTrains(currentTime));
-  }, [currentTime]);
+  }, [virtualTime]);
 
   return (
-    <div className="train-container">
+    <div className="mainContainer">
       <div className="train-display">
         <h2>Next Train Arrivals</h2>
-        {visibleTrains.length === 0 ? (
-          <p>No Train Arrivals</p>
-        ) : (
-          <ul>
-            {visibleTrains.map((train) => {
-              const timeLeft = train.arrivalTime - currentTime;
-              return (
-                <li
-                  key={train.id}
-                  style={{ color: timeLeft <= 2 ? "red" : "inherit" }}
-                >
-                  Train to <strong>{train.destination}</strong> arriving in{" "}
-                  <strong>{timeLeft}</strong> minutes
-                </li>
-              );
-            })}
-          </ul>
-        )}
+        <div className="train-list">
+          {visibleTrains.length > 0 ? (
+            visibleTrains.map((train, index) => (
+              <div key={index} className="train-row" data-testid="train-row">
+                <span className="destination" data-testid="destination">
+                  {train.destination}
+                </span>
+                <span className="arrival" data-testid="arrival">
+                  in{" "}
+                  {train.arrivalTime -
+                    parseInt(virtualTime.split(":")[0]) * 60 -
+                    parseInt(virtualTime.split(":")[1])}{" "}
+                  mins
+                </span>
+              </div>
+            ))
+          ) : (
+            <p>No upcoming trains</p>
+          )}
+        </div>
+        <div className="virtual-time" data-testid="virtual-time">
+          Current VT: {virtualTime}
+        </div>
       </div>
     </div>
   );
