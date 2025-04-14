@@ -1,0 +1,34 @@
+.train-display {
+  border: 1px solid #ccc;
+  padding: 16px;
+  width: 350px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.train-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.train-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.destination {
+  font-weight: bold;
+}
+
+.arrival {
+  font-style: italic;
+}
+
+.virtual-time {
+  margin-top: 10px;
+  font-weight: bold;
+}
